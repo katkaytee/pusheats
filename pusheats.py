@@ -93,8 +93,8 @@ def get_pusheen():
 	return send_file(PUSHEEN_SOURCE + filename, mimetype="image/png")
 
 @app.route('/get_text')
-def get_tezt():
-    if request.args.get('type') == 1:
+def get_text():
+    if request.args.get('type') == '1':
          f_no = random.randint(0, len(POS_TEXT) - 1)
          return POS_TEXT[f_no]
     else:

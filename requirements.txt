@@ -1,0 +1,4 @@
+Flask==0.8
+Jinja2==2.6
+gunicorn==0.14.2
+pillow>=0.0.1
